@@ -1,0 +1,13 @@
+node {
+   
+       git  'https://github.com/pmisarwala/JunitExample.git'
+       sh 'mvn package'
+       def image = docker.build ('pmisarwala/myapp')
+       docker.withRegistry("https://registry.hub.docker.com", "dockerlogin") {
+       image.push()
+}     
+   image.inside{
+       sh 'mvn test'
+   }
+  junit ‘target/surefire-reports/**/*.xml’
+}
