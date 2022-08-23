@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"Practica4","l":"Division"},{"p":"Practica4","l":"JuegoCifras"},{"p":"Practica4","l":"Multiplicacion"},{"p":"Practica4","l":"Operaciones"},{"p":"Practica4","l":"Resta"},{"p":"Practica4","l":"Suma"}]
